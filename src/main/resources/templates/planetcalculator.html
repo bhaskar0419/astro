@@ -17,17 +17,17 @@
                 <div class="row">
                     <div class="form-group col-md-8">
                         <label for="lat" class="col-form-label">Latitude</label>
-                        <input type="text" th:field="*{lat}" class="form-control" id="lat" placeholder="Enter Latitude" required>
+                        <input type="text" name="lat" th:field="*{lat}" class="form-control" id="lat" placeholder="Enter Latitude" required>
                         <span th:if="${#fields.hasErrors('lat')}" th:errors="*{lat}" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-8">
                         <label for="lon" class="col-form-label">Longitude</label>
-                        <input type="text" th:field="*{lon}" class="form-control" id="lon" placeholder="Enter Longitude" required>
+                        <input type="text" name="lon" th:field="*{lon}" class="form-control" id="lon" placeholder="Enter Longitude" required>
                         <span th:if="${#fields.hasErrors('lon')}" th:errors="*{lon}" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-8">
                         <label for="datetime" class="col-form-label">DateTime</label>
-                        <input type="text" th:field="*{datetime}" class="form-control" id="datetime" placeholder="Enter DateTime" required>
+                        <input type="text" name="datetime" th:field="*{datetime}" class="form-control" id="datetime" placeholder="Enter DateTime" required>
                         <span th:if="${#fields.hasErrors('datetime')}" th:errors="*{datetime}" class="text-danger"></span>
                     </div>
 
